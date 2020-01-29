@@ -29,11 +29,9 @@ public class CalculateBMI {
         return weight;
     }
     private double calculate(int height,int weight){
-        double h = height;
-        double w = weight;
-        double heightPerHundred = h / 100.0;
+        double heightPerHundred = height / 100.0;
         double heightPow = heightPerHundred*heightPerHundred;
-        double bmi = w / heightPow;
+        double bmi = weight / heightPow;
 
         return bmi;
     }
